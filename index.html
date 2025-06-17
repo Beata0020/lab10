@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lab10</title>
+    <title>lab12</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-    <h1 class="text-2xl text-primary font-bold">
-    Zadanie 10 technologie webowe
-    </h1>
-  </body>
+    <h1>Lista Artykułów</h1>
+      <div id="article"></div>
+
+      <h2>Dodaj nowy artykuł</h2>
+      <form id="articleForm">
+        <input type="text" name="title" placeholder="Tytuł" required />
+        <input type="text" name="subtitle" placeholder="Podtytuł" />
+        <input type="text" name="author" placeholder="Autor" required />
+        <textarea name="content" placeholder="Treść" rows="5" required></textarea>
+        <button type="submit">Dodaj Artykuł</button>
+      </form>
+      <script type="module" src="/src/main.js"></script>
+    </body>
 </html>
